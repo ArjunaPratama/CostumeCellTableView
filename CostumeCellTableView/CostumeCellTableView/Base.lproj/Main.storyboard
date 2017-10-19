@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5nE-RA-Im4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Customcell Table View Controller-->
+        <scene sceneID="ul6-Qk-CW8">
+            <objects>
+                <tableViewController id="5nE-RA-Im4" customClass="CustomcellTableViewController" customModule="CostumeCellTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ux2-RB-3bS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellBerita" rowHeight="281" id="Sbj-de-GeQ" customClass="BeritaTableViewCell" customModule="CostumeCellTableView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="281"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sbj-de-GeQ" id="Ye7-Dt-jNP">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="280.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="RXI-OF-Ahu">
+                                            <rect key="frame" x="8" y="8" width="251" height="266"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="921-5" translatesAutoresizingMaskIntoConstraints="NO" id="Cbu-NE-B68">
+                                                    <rect key="frame" x="0.0" y="0.0" width="251" height="200"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sejarah" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ke-Hp-QGb">
+                                                    <rect key="frame" x="0.0" y="200" width="251" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Danboo : Siapa dia sebenarnya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgG-UJ-4Ny">
+                                                    <rect key="frame" x="0.0" y="216" width="251" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 July 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkC-b8-8oW">
+                                                    <rect key="frame" x="0.0" y="236.5" width="251" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Isi Berita" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgJ-CZ-iol">
+                                                    <rect key="frame" x="0.0" y="252.5" width="251" height="13.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="RXI-OF-Ahu" secondAttribute="trailing" constant="116" id="Ecm-Mf-9Ya"/>
+                                        <constraint firstAttribute="bottom" secondItem="RXI-OF-Ahu" secondAttribute="bottom" constant="6.5" id="UOS-QZ-zjT"/>
+                                        <constraint firstItem="RXI-OF-Ahu" firstAttribute="top" secondItem="Ye7-Dt-jNP" secondAttribute="top" constant="8" id="ZgD-eZ-CyV"/>
+                                        <constraint firstItem="RXI-OF-Ahu" firstAttribute="leading" secondItem="Ye7-Dt-jNP" secondAttribute="leading" constant="8" id="eab-Yj-Rht"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgGambar" destination="Cbu-NE-B68" id="VJ0-Tt-3qT"/>
+                                    <outlet property="isiBerita" destination="lgJ-CZ-iol" id="Np2-zK-KSy"/>
+                                    <outlet property="judulBerita" destination="zgG-UJ-4Ny" id="hdw-6n-u9g"/>
+                                    <outlet property="labelKategori" destination="9Ke-Hp-QGb" id="FUV-hg-Vb2"/>
+                                    <outlet property="tanggalBerita" destination="SkC-b8-8oW" id="lAS-9C-Udn"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5nE-RA-Im4" id="fhI-pg-l4z"/>
+                            <outlet property="delegate" destination="5nE-RA-Im4" id="33l-XL-HcA"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKk-TT-5mm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-258.39999999999998" y="-100.29985007496252"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="921-5" width="200" height="200"/>
+    </resources>
+</document>
