@@ -18,16 +18,15 @@ class CustomcellTableViewController: UITableViewController {
     let isiBerita : [String] = ["Danbo berasal dari kata Danboard yang juga mewakili bahan dasar pembuatan bonekanya, yaitu kertas karton board. Bagi penggemar komik Yotsuba&!, tentunya boneka robot ini sudah bukan sosok yang asing lagi. Boneka Danbo adalah action figure unik berbentuk manusia buatan Kiyohiko Azuma, komikus dari manga populer tersebut.", " Sejak meluncur di platform PC dan konsol (Xbox One dan PS4) tahun lalu, Blizzard berhasil membuktikan diri kalau gim IP (intellectual property) buatannya berjudul Overwatch dapat meraih sukses yang besar.Gim bergenre first person shooter multiplayer inipun kembali menorehkan sejarah. Dalam akun Twitter resminya, Blizzard mengumumkan ada 35 juta gamer (PC, PS4 dan Xbox One) di dunia yang memainkan Overwatch ", "Saya ingin memanfaatkan momen ini untuk mengucapkan terima kasih kepada para pemeran dan kru yang sangat berbakat atas semua kerja keras mereka,kata sineas 63 tahun itu.",
         "Bisakah kita menyebutkan judul filmnya? Aktor yang mengenakan kostum Chewbacca kemudian menyerahkan sebuah kertas bertuliskan judul film terbaru Star Wars ini. Tertulis dalam kertasnya logo bertuliskan: Solo: A Star Wars Story.", "Bermain gim online tidak hanya menjadi sarana hiburan, tetapi bisa menjadi sumber penghasilan. Tak sedikit anak muda yang tertarik menekuni gim demi masuk ke dunia profesional.", "Perempuan berusia 50 tahun itu telah menyerahkan surat pengunduran dirinya kepada Perdana Menteri Antonio Costa pada Rabu waktu setempat.,Setelah musim panas ini, tidak ada yang sama seperti sebelumnya, ujar Costa, yang pada awalnya menolak permintaan de Sousa untuk mundur, meski di lain sisi ia mengakui adanya kesalahan serius dalam penanganan masalah kebakaran hutan ini Demikian seperti dikutip dari The Guardian pada Kamis (19/10/2017)."]
     
-    let gambarBerita : [String] = ["1.jpg", "2.png", "3.jpg", "4.jpg", "5.png"]
+    let gambarBerita : [String] = ["921-5.jpg", "921-5.jpg", "921-5.jpg", "921-5.jpg", "921-5.jpg"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        //setting high table view
+        tableView.estimatedRowHeight = 650.0
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,23 +38,31 @@ class CustomcellTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return judulBerita.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellBerita", for: indexPath) as! BeritaTableViewCell
 
         // Configure the cell...
 
+        cell.judulBerita.text = judulBerita[indexPath.row]
+        cell.tanggalBerita.text = tglData[indexPath.row]
+        cell.labelKategori.text = category[indexPath.row]
+        cell.isiBerita.text = isiBerita[indexPath.row]
+        
+        let dataImage :UIImage = UIImage(named: gambarBerita[indexPath.row])!
+        
+      cell.imgGambar.image = dataImage
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

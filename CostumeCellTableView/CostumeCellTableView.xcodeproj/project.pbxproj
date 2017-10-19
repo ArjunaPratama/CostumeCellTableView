@@ -51,11 +51,8 @@
 		DCCA3F801F9881C900FE5A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCCA3F8C1F98897700FE5A8F /* CustomcellTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomcellTableViewController.swift; sourceTree = "<group>"; };
 		DCCA3F8E1F9889DA00FE5A8F /* BeritaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaTableViewCell.swift; sourceTree = "<group>"; };
-		DCCA3F901F988F6F00FE5A8F /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
-		DCCA3F911F988F7900FE5A8F /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
-		DCCA3F921F988F8300FE5A8F /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
-		DCCA3F931F988F8F00FE5A8F /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
-		DCCA3F941F988F9900FE5A8F /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		DCCA3F951F98AB7F00FE5A8F /* 921-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "921-5.jpg"; path = "Assets.xcassets/921-5.imageset/921-5.jpg"; sourceTree = "<group>"; };
+		DCCA3F961F98ACE200FE5A8F /* 005704100_1501736133-overwatch-00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "005704100_1501736133-overwatch-00.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,11 +103,8 @@
 		DCCA3F5D1F9881C900FE5A8F /* CostumeCellTableView */ = {
 			isa = PBXGroup;
 			children = (
-				DCCA3F941F988F9900FE5A8F /* 1.jpg */,
-				DCCA3F931F988F8F00FE5A8F /* 2.png */,
-				DCCA3F921F988F8300FE5A8F /* 3.jpg */,
-				DCCA3F911F988F7900FE5A8F /* 4.jpg */,
-				DCCA3F901F988F6F00FE5A8F /* 5.png */,
+				DCCA3F961F98ACE200FE5A8F /* 005704100_1501736133-overwatch-00.jpg */,
+				DCCA3F951F98AB7F00FE5A8F /* 921-5.jpg */,
 				DCCA3F5E1F9881C900FE5A8F /* AppDelegate.swift */,
 				DCCA3F601F9881C900FE5A8F /* ViewController.swift */,
 				DCCA3F621F9881C900FE5A8F /* Main.storyboard */,
